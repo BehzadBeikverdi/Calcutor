@@ -17,7 +17,7 @@ appRoutes() => [
     name: '/simpleCalculator',
     page: () => const SimpleCalculator(),
     middlewares: [Middleware()],
-    transition: Transition.cupertino,
+    transition: Transition.circularReveal,
     transitionDuration: const Duration(milliseconds: 500),
   ),
 ];

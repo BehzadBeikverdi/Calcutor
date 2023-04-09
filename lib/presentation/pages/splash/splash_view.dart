@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:calcutor/core/routes/app_routes.dart';
 import 'package:calcutor/core/themes/font_size.dart';
 import 'package:calcutor/presentation/pages/simple_calculator/simple_calculator_view.dart';
+import 'package:calcutor/presentation/pages/splash/splash_logic.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -35,16 +36,3 @@ class SplashView extends StatelessWidget {
   }
 }
 
-class SplashController extends GetxController {
-  @override
-  void onInit() {
-    navigateToNextScreen();
-    super.onInit();
-  }
-
-  navigateToNextScreen() {
-    Timer(const Duration(seconds: 5),
-            ()=> Get.offNamed("/simpleCalculator")
-        );
-  }
-}
