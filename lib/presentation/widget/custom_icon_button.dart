@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/themes/theme_colors.dart';
 
-Widget iconButton(BuildContext context, IconData icon, Color color) {
+Widget iconButton(BuildContext context, IconData icon, Color color, ) {
   return Theme(
     data: ThemeData(splashColor: Colors.black87),
     child: InkWell(
